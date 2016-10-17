@@ -1,7 +1,7 @@
 keyboards-rg (0.3) unstable; urgency=high
 
-  * increase compat level (#closes: #817511), thanks to Logan Rosen
-  * replace obsolete Suggests
+  * increase compat level (closes: #817511), thanks to Logan Rosen
+  * replace obsolete Suggests (closes: #601350)
 
  -- Radovan Garabík <garabik@kassiopeia.juls.savba.sk>  Mon, 17 Oct 2016 14:52:51 +0200
 
