@@ -1,0 +1,3 @@
+layouts-console/* usr/share/keymaps/i386/qwerty
+layouts-xkb/* usr/share/X11/xkb/symbols
+scripts/* usr/bin
