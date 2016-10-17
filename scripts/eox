@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setxkbmap us,eo_rg -option 'grp:shift_toggle,compose:menu,lv3:ralt_switch'
+

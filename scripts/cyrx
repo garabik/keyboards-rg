@@ -1,0 +1,12 @@
+#!/bin/sh
+
+variant=""
+if [ "$1" = "uk" ]; then
+    variant="(ukrainian)"
+fi
+if [ "$1" = "by" ]; then
+    variant="(belarussian)"
+fi
+
+
+setxkbmap "us,pancyr$variant" -option 'grp:shift_toggle,compose:menu,lv3:ralt_switch'

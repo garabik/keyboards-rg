@@ -1,0 +1,8 @@
+These documents describe only xkb maps for X11.
+Console maps are undocumented, read the comments at the top
+of files for some information.
+
+To use, copy the files from layouts-xkb to /usr/share/X11/xkb/symbols/
+(or /etc/X11/xkb/symbols/ in older X11), and copy the files from scripts/
+somewhere to your path (e.g. /usr/local/bin/) and run skx, eox, cyrx,
+cyrx uk, cyrx by

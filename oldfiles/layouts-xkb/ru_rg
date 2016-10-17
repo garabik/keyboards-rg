@@ -1,0 +1,286 @@
+// $XFree86$
+
+partial alphanumeric_keys 
+xkb_symbols "basic" {
+     
+     // Describes the differences between a very simple en_US
+     // keyboard and a Russian yawerty layout
+     // 2002 by Radovan Garabik <garabik@melkor.dnp.fmph.uniba.sk>
+     
+
+    name[Group1] = "US";
+    name[Group2] = "Russian";
+
+    key.type = "FOUR_LEVEL";
+
+    key <TLDE> {
+                 [     quoteleft,      asciitilde,
+                       quoteleft,      asciitilde   ],
+                 [      Cyrillic_yu,   Cyrillic_YU,
+                        quoteleft,     asciitilde   ]  };
+    key <AE01>  {
+                    [	1,		exclam,
+        		1,		dead_tilde ],
+                     [	1,		exclam,
+	        	1,		dead_tilde ] };
+    key <AE02>  { 
+                    [	2,         at, 
+		    	2,		dead_caron ],
+                    [	2,         at, 
+			2,		dead_caron ] };
+    key <AE03>  { 
+                    [	3,		numbersign,
+			3,      	dead_circumflex ],
+                    [	3,		Cyrillic_io,
+			3,      	numbersign ] };
+    key <AE04>  { 
+                    [	4,		dollar,
+			4,		dead_breve ],
+                    [	4,		Cyrillic_IO,
+			4,		dollar ] };
+    key <AE05>  { 
+                    [	5,		percent,
+			5,	        dead_abovering ],
+                    [	5,		percent,
+			5,	        dead_abovering ] };
+    key <AE06>  { 
+                    [	6,		asciicircum,
+			6,      	dead_ogonek ],
+                    [	6,		Cyrillic_hardsign,
+			6,      	asciicircum ] };
+    key <AE07>  { 
+                    [	7,		ampersand,
+			7,      	dead_grave ],
+                    [	7,		Cyrillic_HARDSIGN,
+			7,      	ampersand ] };
+    key <AE08>  { 
+                    [	8,		asterisk,
+			8,	        dead_abovedot ],
+                    [	8,		asterisk,
+			8,	        dead_abovedot ] };
+    key <AE09>  { 
+                    [	9,		parenleft,
+			9,	        dead_acute ],
+                    [	9,		parenleft,
+			9,	        dead_acute ] };
+    key <AE10>  { 
+                    [	0,		parenright,
+			0,      	dead_doubleacute ],
+                    [	0,		parenright,
+			0,      	dead_doubleacute ] };
+    key <AE11>  { 
+                    [	minus,		underscore,
+			minus,		underscore ],
+                    [	minus,		underscore,
+			minus,		underscore ] };
+    key <AE12>  { 
+                    [	equal,  	plus,
+			equal,  	plus ],
+                    [	Cyrillic_che,    Cyrillic_CHE,
+			equal,		plus ] };
+
+    key <AD01>  { 
+                    [	q,		Q,
+			backslash,	NoSymbol ],
+                    [	Cyrillic_ya,    Cyrillic_YA,
+			0x1000463,      0x1000462 ] }; // fita
+    key <AD02>  { 
+                    [	w,		W,
+			EuroSign,	yen ],
+                [	Cyrillic_ve,     Cyrillic_VE,
+			Cyrillic_u_straight, Cyrillic_U_straight ] };
+    key <AD03>  { 
+                    [	e,		E,
+			EuroSign,        EuroSign ],
+                [	Cyrillic_ie,     Cyrillic_IE,
+			Ukrainian_ie,    Ukrainian_IE ] };
+    key <AD04>  { 
+                    [	r,    		R,              
+		        registered,     registered ],
+                [	Cyrillic_er,    Cyrillic_ER,
+		        registered,     registered ] };
+    key <AD05>  { 
+                    [	t,		T,
+		        thorn,	        Thorn ],
+                [	Cyrillic_te,    Cyrillic_TE,
+		        Cyrillic_te,    Cyrillic_TE ] };
+    key <AD06>  { 
+                    [	y,		Y,
+		        yen,	        yen ],
+                [	Cyrillic_yeru,  Cyrillic_YERU,
+			Ukrainian_yi,    Ukrainian_YI ] };
+    key <AD07>  { 
+                    [	u,		U,
+		        uacute, 	Uacute ],
+                [	Cyrillic_u,     Cyrillic_U,
+		        Byelorussian_shortu,  Byelorussian_SHORTU ] };
+    key <AD08>  { 
+                    [	i,		I,
+		        iacute, 	Iacute ],
+                [	Cyrillic_i,     Cyrillic_I,
+		        Ukrainian_i,    Ukrainian_I ] };
+    key <AD09>  { 
+                    [	o,		O,
+		        oacute,	        Oacute ],
+                [	Cyrillic_o,     Cyrillic_O,
+		        Cyrillic_o_bar, Cyrillic_O_bar ] };
+    key <AD10>  { 
+                    [	p,		P,
+		        Greek_pi,	Greek_PI ],
+                [	Cyrillic_pe,    Cyrillic_PE,
+		        Cyrillic_pe,    Cyrillic_PE ] };
+
+    key <AD11>  {
+                     [	bracketleft,  braceleft,
+                        bracketleft,  braceleft  ],
+                 [	Cyrillic_sha,    Cyrillic_SHA,
+                        bracketleft,  braceleft  ] };
+    key <AD12>  { 
+                    [	bracketright, braceright,
+                        bracketright, braceright ],
+                [	Cyrillic_shcha,  Cyrillic_SHCHA,
+                        bracketright, braceright ] };
+
+    key <AC01>  { 
+                    [	a,		A,
+			agrave,	        Agrave ],
+                [	Cyrillic_a,     Cyrillic_A,
+			Cyrillic_schwa,  Cyrillic_SCHWA ] };
+    key <AC02>  { 
+                    [	s,		S,
+			scaron,	        Scaron ],
+                [	Cyrillic_es,    Cyrillic_ES,
+			Cyrillic_es,    Cyrillic_ES ] };
+    key <AC03>  { 
+                    [	d,		D,
+			dstroke,        Dstroke         ],
+                [	Cyrillic_de,    Cyrillic_DE,
+			Serbian_dje,    Serbian_DJE ] };
+    key <AC04>  { 
+                    [	f,		F,
+			rcaron,	        Rcaron  ],
+                [	Cyrillic_ef,    Cyrillic_EF,
+			0x1000473,	0x1000472  ] };
+    key <AC05>  { 
+                    [	g,		G,
+			bracketright,	NoSymbol ],
+                [	Cyrillic_ghe,   Cyrillic_GHE,
+			Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] };
+    key <AC06>  { 
+                    [	h,		H,
+			grave,		NoSymbol ],
+                [       Cyrillic_ha,    Cyrillic_HA,
+			Macedonia_gje,  Macedonia_GJE ] };
+    key <AC07>  { 
+                    [	j,		J,
+			udiaeresis,	Udiaeresis ],
+                [	Cyrillic_shorti, Cyrillic_SHORTI,
+			Serbian_je,     Serbian_JE ] };
+    key <AC08>  { 
+                    [	k,		K,
+			lacute,	        Lacute ],
+                [	Cyrillic_ka,    Cyrillic_KA,
+			Macedonia_kje,   Macedonia_KJE ] };
+    key <AC09>  { 
+                    [	l,		L,
+			sterling,       sterling ],
+                [	Cyrillic_el,    Cyrillic_EL,
+			Cyrillic_lje,   Cyrillic_LJE ] };
+                  
+    key <AC10>  { 
+                    [	semicolon,      colon,
+                        semicolon,      colon ],
+                [	semicolon,      colon,
+                        semicolon,      colon ] };
+    key <AC11>  { 
+                    [	quoteright,     quotedbl,
+                        quoteright,     quotedbl ],
+                [	quoteright,     quotedbl,
+                        quoteright,     quotedbl ] };
+    key <AC12>  { 
+                    [   EuroSign,       dead_diaeresis,
+                        NoSymbol,       NoSymbol ],
+                [       EuroSign,       dead_diaeresis,
+                        NoSymbol,       NoSymbol ] };
+    key <BKSL>  { 
+                    [	backslash,    bar,
+                        backslash,    bar ],
+                [	Cyrillic_e,      Cyrillic_E,
+                        backslash,    bar ] };
+
+    key <LSGT>  { 
+                    [	less,    greater,
+                        backslash,	bar ],
+                [	less,    greater,
+                        backslash,	bar ] };
+    key <AB01>  { 
+                    [	z,		Z,
+			zcaron,		Zcaron ],
+                [	Cyrillic_ze,    Cyrillic_ZE,
+			Macedonia_dse,   Macedonia_DSE ] };
+    key <AB02>  { 
+                    [	x,		X,
+			adiaeresis,	Adiaeresis ],
+                [	Cyrillic_softsign,Cyrillic_SOFTSIGN,
+			Cyrillic_softsign,Cyrillic_SOFTSIGN ] };
+    key <AB03>  { 
+                    [	c,		C,
+			cacute,	        Cacute ],
+                [       Cyrillic_tse,    Cyrillic_TSE,
+			Serbian_tshe,   Serbian_TSHE ] };
+    key <AB04>  { 
+                    [	v,		V,
+			uring,		Uring ],
+                [	Cyrillic_zhe,   Cyrillic_ZHE,
+			Cyrillic_dzhe,  Cyrillic_DZHE ] };
+    key <AB05>  { 
+                    [	b,		B,
+			ssharp,	        NoSymbol ],
+                [	Cyrillic_be,    Cyrillic_BE,
+			Cyrillic_be,    Cyrillic_BE ] };
+    key <AB06>  { 
+                    [	n,		N,
+			ntilde,         Ntilde ],
+                [	Cyrillic_en,    Cyrillic_EN,
+			Cyrillic_nje,    Cyrillic_NJE ] };
+    key <AB07>  { 
+                    [	m,		M,
+			Greek_mu,       Greek_MU ],
+                [	Cyrillic_em,     Cyrillic_EM,
+			Cyrillic_en_descender,Cyrillic_EN_descender ] };
+    key <AB08>  { 
+                    [	comma,    less,
+                        comma,		question ],
+                [	comma,    less,
+                        comma,		question ] };
+    key <AB09>  { 
+                    [	period,    greater,
+                        period,		colon ],
+                [	period,    greater,
+                        period,		colon ] };
+    key <AB10>  { 
+                    [	slash,    question,
+                        minus,		underscore ],
+                [	slash,    question,
+                        minus,		underscore ] };
+
+    key <SPCE>  { 
+                    [	space,		space,
+			nobreakspace,	nobreakspace ],
+                [	space,		space,
+			nobreakspace,	nobreakspace ] };
+
+    // This certainly shouldn't be 'comma'. Something like KP_DecimalComma
+    // would be better but there's no such definition in keysyms.
+    key <KPDL>  { type="FOUR_LEVEL_KEYPAD", [	KP_Delete,	KP_Decimal,
+    						KP_Delete,	comma] };
+
+    key <RALT> {  type="TWO_LEVEL", [ ISO_Level3_Shift, ISO_Level3_Shift ] };
+    key <LWIN> {  type="TWO_LEVEL", [ Meta_L, Meta_L ] };
+    key <RWIN> {  type="TWO_LEVEL", [ Meta_R, Meta_R ] };
+    key <MENU> {  type="TWO_LEVEL", [ Multi_key, Multi_key ] };
+    modifier_map Mod5   { <RALT> };			
+    modifier_map Mod5   { <MENU> };			
+
+};
+			

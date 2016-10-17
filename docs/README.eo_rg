@@ -1,0 +1,18 @@
+Esperanta klavaro por XFree86 (xkb). Cxi tia esperanta klavaro por X11 uzas
+du xkb-grupojn. Oni sxaltas inter ili rapide ekz. per ambaux Shift-oj
+(-option 'grp:shift_toggle').
+
+Unue, vi bezonas propran lokajxaron (aux ISO-8859-3 aux UTF-8). Elsxutu
+cxi tian dosieron, kopiu gxin en /etc/X11/xkb/symbols/ (aux
+/usr/share/X11/xkb/symbols en la nova X11), kaj aktivigu kun la komando:
+setxkbmap us,eo_rg -option 'grp:shift_toggle' kaj uzu
+
+En unua grupo, klavararangxo estas normala usona ascii (oni povas sxangxi
+tion, se vi volas)
+
+En dua grupo, uzu qwyx[] por esperantaj literoj,
+AltGr kun qwyx[] por ASCII literoj qwyx[],
+AltGr+Shift kun qwyx[] por QWYX{}, 
+AltGr+e por EUR (EURO). AltGr+jcshu kiel alternativon.
+
+

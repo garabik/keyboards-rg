@@ -1,0 +1,22 @@
+This document is in UTF-8 encoding.
+
+
+All my keyboard layouts try to adhere to certain principles.
+AltGr (right Alt key) serves as a modifier, yielding additional
+symbols, Menu key serves as a Compose key. 
+
+AltGr when pressed with keys labelled with letters produces special
+symbols. E.g. on a cyrillic layout, pressing AltGr+i in Russian mode
+produces і (U+0456 CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I). So
+now AltGr+Shift+key has also a meaning now (producing uppercase
+letters). AltGr pressed with non-letter keys usually (but not
+universally) tries to produce symbol that is labelled on US layout.
+
+There are a few scripts provided, that can load an appropriate 
+layout. These scripts are "skx", "eox", "cyrxx", they load
+Slovak, Esperanto and Russian layout respectively.
+You switch between the two groups by pressing both Shift keys
+together.
+
+                   Radovan Garabík <garabik @ kassiopeia.juls.savba.sk>
+		   

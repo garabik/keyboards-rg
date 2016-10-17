@@ -1,0 +1,80 @@
+// $XKeyboardConfig: xkbdesc/symbols/sk,v 1.8 2005/01/16 02:18:20 svu Exp $
+
+// $XFree86: xc/programs/xkbcomp/symbols/sk,v 1.2 2002/11/22 04:02:22 dawes 
+// Exp $
+
+partial default alphanumeric_keys 
+xkb_symbols "basic" {
+
+
+     // based on Xorg Slovak keyboard     
+     // 2006 Radovan Garabík <garabik @ kassiopeia.juls.savba.sk>
+
+    include "sk(qwerty)"
+
+    name[Group1] = "Slgul";
+
+    key <TLDE>	{ [     grave, asciitilde,     semicolon, dead_abovering ] };
+    key <AE01>	{ [      plus,     exclam,             1,     dead_tilde ]	};
+    key <AE02>	{ [    lcaron,         at,             2,     dead_caron ]	};
+    key <AE03>	{ [    scaron, numbersign,             3,   dead_circumflex ] };
+    key <AE04>	{ [    ccaron,     dollar,             4,   dead_breve ]	};
+    key <AE05>	{ [    tcaron,    percent,             5, dead_abovering ] };
+    key <AE06>	{ [    zcaron,asciicircum,             6,    dead_ogonek ]	};
+    key <AE07>	{ [    yacute,  ampersand,             7,     dead_grave ]	};
+    key <AE08>	{ [    aacute,   asterisk,             8,  dead_abovedot ] };
+    key <AE09>	{ [    iacute,  parenleft,             9,     dead_acute ]	};
+    key <AE10>	{ [    eacute, parenright,             0, dead_doubleacute ] };
+    key <AE11>	{ [     minus, underscore, dead_diaeresis, equal ] };
+    key <AE12>	{ [dead_acute, dead_caron,  equal, plus ]	};
+
+    key <AD01>	{ [     U11BC,      U110B,    backslash,     NoSymbol ]	};
+    key <AD02>	{ [     U11E2,      U111D,          bar,     Nosymbol ]	};
+    key <AD03>	{ [     U1166,          E,     EuroSign,     NoSymbol ]	};
+    key <AD04>	{ [     U11AF,      U1105,     NoSymbol,     NoSymbol ]	};
+    key <AD05>	{ [     U11C0,      U1110,     NoSymbol,     NoSymbol ]	};
+    key <AD06>	{ [     U1173,          Y,     NoSymbol,     NoSymbol ]	};
+    key <AD07>	{ [     U116E,          U,     NoSymbol,     NoSymbol ]	};
+    key <AD08>	{ [     U1175,          I,     NoSymbol,     NoSymbol ]	};
+    key <AD09>	{ [     U1169,          O,     odiaeresis,   Odiaeresis ]	};
+    key <AD10>	{ [     U11C1,      U1111,     NoSymbol,     NoSymbol ]	};
+
+    key <AD11>	{ [ bracketleft,     braceleft, uacute, slash ]	};
+    key <AD12>	{ [bracketright,    braceright, adiaeresis, Adiaeresis ]	};
+
+    key <AC01>	{ [     U1161,          A,   asciitilde,     NoSymbol ]	};
+    key <AC02>	{ [     U11BA,      U1109,      dstroke,     NoSymbol ]	};
+    key <AC03>	{ [     U11C0,      U1110,      Dstroke,     NoSymbol ]	};
+    key <AC04>	{ [     U11F4,      U1157,  bracketleft,     NoSymbol ]	};
+    key <AC05>	{ [     U11A8,      U1100, bracketright,     NoSymbol ]	};
+    key <AC06>	{ [     U11F9,      U1159,        grave,     NoSymbol ]	};
+    key <AC07>	{ [         j,          J,   apostrophe,     NoSymbol ]	};
+    key <AC08>	{ [         k,          K,      lstroke,     NoSymbol ]	};
+    key <AC09>	{ [         l,          L,      Lstroke,     NoSymbol ]	};
+                  
+    key <AC10>	{ [  semicolon,          colon,   ocircumflex,   Ocircumflex ]	};
+    key <AC11>	{ [ apostrophe,       quotedbl,       section,     exclam ]	};
+    key <AC12>	{ [   EuroSign, dead_diaeresis,      NoSymbol,     NoSymbol ]	};
+    key <BKSL>	{ [  backslash,            bar,        ncaron, Ncaron ]	};
+
+    key <LSGT>	{ [ backslash,        bar,        slash,     NoSymbol ]	};
+    key <AB01>	{ [         z,          Z,       degree,     NoSymbol ]	};
+    key <AB02>	{ [         x,          X,   numbersign,     Nosymbol ]	};
+    key <AB03>	{ [         c,          C,    ampersand,     NoSymbol ]	};
+    key <AB04>	{ [         v,          V,           at,     NoSymbol ]	};
+    key <AB05>	{ [         b,          B,    braceleft,     NoSymbol ]	};
+    key <AB06>	{ [     U11AB,      U1102,   braceright,     NoSymbol ]	};
+    key <AB07>	{ [     U11B7,      U1106,  asciicircum,     NoSymbol ]	};
+    key <AB08>	{ [     comma,       less,     doublelowquotemark,     question ]	};
+    key <AB09>	{ [    period,    greater,    leftdoublequotemark,     colon ]	};
+    key <AB10>	{ [     slash,   question,        minus,     underscore ]	};
+
+    key <SPCE>  { [     space,      space, nobreakspace, nobreakspace ] };
+
+    key <KPDL>	{ type[Group1]="FOUR_LEVEL_KEYPAD",
+                  [ KP_Delete,      period,    KP_Delete,   KP_Decimal ]	};
+
+//    include "level3(ralt_switch)"
+};
+
+

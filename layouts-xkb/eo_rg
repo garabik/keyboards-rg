@@ -1,0 +1,57 @@
+// $XKeyboardConfig: xkbdesc/symbols/sk,v 1.8 2005/01/16 02:18:20 svu Exp $
+
+// $XFree86: xc/programs/xkbcomp/symbols/sk,v 1.2 2002/11/22 04:02:22 dawes 
+// Exp $
+
+partial default alphanumeric_keys 
+xkb_symbols "basic" {
+
+
+     // based on Xorg Slovak keyboard     
+     // 2006 Radovan Garabík <garabik @ kassiopeia.juls.savba.sk>
+
+    include "us"
+
+    name[Group1] = "Esperanto";
+
+
+    key <AD01>	{ [ ccircumflex,  Ccircumflex,        q,            Q ]	};
+    key <AD02>	{ [    ubreve,    Ubreve,             w,            W ]	};
+    key <AD03>	{ [         e,          E,     EuroSign,     EuroSign ]	};
+    key <AD04>	{ [         r,          R,     NoSymbol,     NoSymbol ]	};
+    key <AD05>	{ [         t,          T,     NoSymbol,     NoSymbol ]	};
+    key <AD06>	{ [ gcircumflex,  Gcircumflex,        y,            Y ]	};
+    key <AD07>	{ [         u,          U,       ubreve,       Ubreve ]	};
+    key <AD08>	{ [         i,          I,     NoSymbol,     NoSymbol ]	};
+    key <AD09>	{ [         o,          O,     NoSymbol,     NoSymbol ]	};
+    key <AD10>	{ [         p,          P,     NoSymbol,     NoSymbol ]	};
+
+    key <AD11>	{ [ jcircumflex,  Jcircumflex, bracketleft,  braceleft ]	};
+    key <AD12>	{ [ hcircumflex,  Hcircumflex, bracketright, braceright ]	};
+
+    key <AC01>	{ [         a,          A,   asciitilde,     NoSymbol ]	};
+    key <AC02>	{ [         s,          S,  scircumflex,  Scircumflex ]	};
+    key <AC03>	{ [         d,          D,      Dstroke,     NoSymbol ]	};
+    key <AC04>	{ [         f,          F,  bracketleft,     NoSymbol ]	};
+    key <AC05>	{ [         g,          G,  gcircumflex,  Gcircumflex ]	};
+    key <AC06>	{ [         h,          H,  hcircumflex,  Hcircumflex ]	};
+    key <AC07>	{ [         j,          J,  jcircumflex,  Jcircumflex ]	};
+    key <AC08>	{ [         k,          K,      lstroke,     NoSymbol ]	};
+    key <AC09>	{ [         l,          L,      Lstroke,     NoSymbol ]	};
+                  
+    key <AB01>	{ [         z,          Z,       degree,     NoSymbol ]	};
+    key <AB02>	{ [ scircumflex,  Scircumflex,        x,            X ]	};
+    key <AB03>	{ [         c,          C,  ccircumflex,  Ccircumflex ]	};
+    key <AB04>	{ [         v,          V,           at,     NoSymbol ]	};
+    key <AB05>	{ [         b,          B,    braceleft,     NoSymbol ]	};
+    key <AB06>	{ [         n,          N,   braceright,     NoSymbol ]	};
+    key <AB07>	{ [         m,          M,  asciicircum,     NoSymbol ]	};
+
+    key <SPCE>  { [     space,      space, nobreakspace, nobreakspace ] };
+
+    key <KPDL>	{ type[Group1]="FOUR_LEVEL_KEYPAD",
+                  [ KP_Delete,      period,    KP_Delete,   KP_Decimal ]	};
+
+};
+
+

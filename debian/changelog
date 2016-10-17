@@ -1,0 +1,17 @@
+keyboards-rg (0.2) unstable; urgency=low
+
+  * brought in sync with Xorg
+  * modify cyrillic layout, add Ukrainian and Belarussian versions
+  * moved X11 keyboards to /usr/share/X11/xkb (closes: #385429)
+
+ -- Radovan Garabík <garabik@kassiopeia.juls.savba.sk>  Thu, 31 Aug 2006 17:50:19 +0200
+
+keyboards-rg (0.1) unstable; urgency=low
+
+  * Initial Release
+
+ -- Radovan Garabik <garabik@melkor.dnp.fmph.uniba.sk>  Wed,  6 Nov 2002 13:08:38 +0200
+
+Local variables:
+mode: debian-changelog
+End:

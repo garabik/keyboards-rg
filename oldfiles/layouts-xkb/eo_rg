@@ -1,0 +1,278 @@
+// $XFree86$
+
+partial alphanumeric_keys 
+xkb_symbols "basic" {
+     
+     // Describes the differences between a very simple en_US
+     // keyboard and an Esperanto keyboard
+     // 2002 by Radovan Garabik <garabik@melkor.dnp.fmph.uniba.sk>
+     
+
+    name[Group1] = "US";
+    name[Group2] = "Esperanto";
+
+    key.type = "FOUR_LEVEL";
+
+    key <TLDE> {
+                 [     quoteleft,      asciitilde,
+                        quoteleft,      asciitilde   ],
+                 [     quoteleft,      asciitilde,
+                        quoteleft,      asciitilde   ]  };
+    key <AE01>  {
+                    [	1,		exclam,
+        		1,		exclam ],
+                     [	1,		exclam,
+	        	1,		exclam ] };
+    key <AE02>  { 
+                    [	2,         	at, 
+		    	2,         	at ],
+                    [	2,         	at, 
+			2,         	at ] };
+    key <AE03>  { 
+                    [	3,		numbersign,
+			3,		numbersign ],
+                    [	3,		numbersign,
+			3,		numbersign ] };
+    key <AE04>  { 
+                    [	4,		dollar,
+			4,		dollar ],
+                    [	4,		dollar,
+			4,		dollar ] };
+    key <AE05>  { 
+                    [	5,		percent,
+			5,		percent ],
+                    [	5,		percent,
+			5,	        percent ] };
+    key <AE06>  { 
+                    [	6,		asciicircum,
+			6,		asciicircum ],
+                    [	6,		asciicircum,
+			6,      	asciicircum ] };
+    key <AE07>  { 
+                    [	7,		ampersand,
+			7,		ampersand ],
+                    [	7,		ampersand,
+			7,      	ampersand ] };
+    key <AE08>  { 
+                    [	8,		asterisk,
+			8,		asterisk ],
+                    [	8,		asterisk,
+			8,	        asterisk ] };
+    key <AE09>  { 
+                    [	9,		parenleft,
+			iacute,	        dead_acute ],
+                    [	iacute,		parenleft,
+			9,	        dead_acute ] };
+    key <AE10>  { 
+                    [	0,		parenright,
+			0,		parenright ],
+                    [	0,		parenright,
+			0,      	parenright ] };
+    key <AE11>  { 
+                    [	minus,		underscore,
+			minus,		underscore ],
+                    [	minus,		underscore,
+			minus,		underscore ] };
+    key <AE12>  { 
+                    [	equal,  	plus,
+			equal,  	plus ],
+                    [	equal,  	plus,
+			equal,		plus ] };
+
+    key <AD01>  { 
+                    [	q,		Q,
+			backslash,	NoSymbol ],
+                    [	q,		Q,
+			backslash,	NoSymbol ] };
+    key <AD02>  { 
+                    [	w,		W,
+			ubreve,		Ubreve ],
+                [	ubreve,		Ubreve,
+			w,		W ] };
+    key <AD03>  { 
+                    [	e,		E,
+			EuroSign,	EuroSign ],
+                [	e,		E,
+			EuroSign,	EuroSign ] };
+    key <AD04>  { 
+                    [	r,    		R,              
+		        racute,	        Racute ],
+                [	r,    		R,              
+		        racute,	        Racute ] };
+    key <AD05>  { 
+                    [	t,		T,
+		        tcaron,	        Tcaron ],
+                [	t,		T,
+		        tcaron,	        Tcaron ] };
+    key <AD06>  { 
+                    [	y,		Y,
+		        gcircumflex,	Gcircumflex ],
+                [	gcircumflex,	Gcircumflex,
+		        y,	        Y ] };
+    key <AD07>  { 
+                    [	u,		U,
+		        ubreve, 	Ubreve ],
+                [	u,		U,
+		        ubreve, 	Ubreve ] };
+    key <AD08>  { 
+                    [	i,		I,
+		        iacute, 	Iacute ],
+                [	i,		I,
+		        iacute, 	Iacute ] };
+    key <AD09>  { 
+                    [	o,		O,
+		        oacute,	        Oacute ],
+                [	o,		O,
+		        oacute,	        Oacute ] };
+    key <AD10>  { 
+                    [	p,		P,
+		        ocircumflex,	Ocircumflex ],
+                [	p,		P,
+		        ocircumflex,	Ocircumflex ] };
+    key <AD11>  {
+                     [	bracketleft,  braceleft,
+                        uacute,		slash  ],
+                 [	bracketleft,  braceleft,
+                        bracketleft,  braceleft  ] };
+    key <AD12>  { 
+                    [	bracketright, braceright,
+                        adiaeresis,	parenleft ],
+                [	bracketright, braceright,
+                        bracketright, braceright ] };
+
+    key <AC01>  { 
+                    [	a,		A,
+			aacute,	        Aacute ],
+                [	a,		A,
+			aacute,	        Aacute ] };
+    key <AC02>  { 
+                    [	s,		S,
+			scircumflex,	Scircumflex ],
+                [	s,		S,
+			scircumflex,	        Scircumflex ] };
+    key <AC03>  { 
+                    [	d,		D,
+			dcaron, 	Dcaron ],
+                [	d,		D,
+			dcaron, 	Dcaron ] };
+    key <AC04>  { 
+                    [	f,		F,
+			rcaron,	        Rcaron  ],
+                [	f,		F,
+			rcaron,	        Rcaron  ] };
+    key <AC05>  { 
+                    [	g,		G,
+			gcircumflex,	Gcircumflex ],
+                [	g,		G,
+			gcircumflex,	Gcircumflex ] };
+    key <AC06>  { 
+                    [	h,		H,
+			hcircumflex,	Hcircumflex ],
+                [	h,		H,
+			hcircumflex,	Hcircumflex ] };
+    key <AC07>  { 
+                    [	j,		J,
+			jcircumflex,	Jcircumflex ],
+                [	j,		J,
+			jcircumflex,	Jcircumflex ] };
+    key <AC08>  { 
+                    [	k,		K,
+			lacute,	        Lacute ],
+                [	k,		K,
+			lacute,	        Lacute ] };
+    key <AC09>  { 
+                    [	l,		L,
+			lcaron,	        Lcaron ],
+                [	l,		L,
+			lcaron,	        Lcaron ] };
+
+    key <AC10>  { 
+                    [	semicolon,      colon,
+                        semicolon,      colon ],
+                [	semicolon,      colon,
+                        semicolon,      colon ] };
+    key <AC11>  { 
+                    [	quoteright,     quotedbl,
+                        quoteright,     quotedbl ],
+                [	quoteright,     quotedbl,
+                        quoteright,     quotedbl ] };
+
+    key <BKSL>  { 
+                    [	backslash,    bar,
+                        backslash,    bar ],
+                [	backslash,    bar,
+                        backslash,    bar ] };
+
+    key <LSGT>  { 
+                    [	less,    greater,
+                        less,    greater ],
+                [	less,    greater,
+                        less,    greater ] };
+              
+    key <AB01>  { 
+                    [	z,		Z,
+			zcaron,		Zcaron ],
+                [	z,		Z,
+			zcaron,		Zcaron ] };
+    key <AB02>  { 
+                    [	x,		X,
+			adiaeresis,	Adiaeresis ],
+                [	x,		X,
+			adiaeresis,	Adiaeresis ] };
+    key <AB03>  { 
+                    [	c,		C,
+			ccircumflex,    Ccircumflex ],
+                [	c,		C,
+			ccircumflex,	Ccircumflex ] };
+    key <AB04>  { 
+                    [	v,		V,
+			uring,		Uring ],
+                [	v,		V,
+			uring,		Uring ] };
+    key <AB05>  { 
+                    [	b,		B,
+			ssharp,	        NoSymbol ],
+                [	b,		B,
+			ssharp,	        NoSymbol ] };
+    key <AB06>  { 
+                    [	n,		N,
+			ncaron,	        Ncaron ],
+                [	n,		N,
+			ncaron,	        Ncaron ] };
+    key <AB07>  { 
+                    [	m,		M,
+			odiaeresis,     Odiaeresis ],
+                [	m,		M,
+			odiaeresis,     Odiaeresis ] };
+    key <AB08>  { 
+                    [	comma,  	less,
+                        comma,		less ],
+                [	comma,	    	less,
+                        comma,		less ] };
+    key <AB09>  { 
+                    [	period,    	greater,
+                        period,		greater ],
+                [	period,    	greater,
+                        period,		greater ] };
+    key <AB10>  { 
+                    [	slash,    	question,
+                        slash,    	question ],
+                [	slash, 		question,
+                        slash,    	question ] };
+
+    key <SPCE>  { 
+                    [	space,		space,
+			nobreakspace,	nobreakspace ],
+                [	space,		space,
+			nobreakspace,	nobreakspace ] };
+
+
+    key <RALT> {  type="TWO_LEVEL", [ ISO_Level3_Shift, ISO_Level3_Shift ] };
+    key <LWIN> {  type="TWO_LEVEL", [ Meta_L, Meta_L ] };
+    key <RWIN> {  type="TWO_LEVEL", [ Meta_R, Meta_R ] };
+    key <MENU> {  type="TWO_LEVEL", [ Multi_key, Multi_key ] };
+    modifier_map Mod5   { <RALT> };			
+   modifier_map Mod5   { <MENU> };			
+
+};
+			

@@ -1,0 +1,289 @@
+// $XFree86$
+
+partial alphanumeric_keys 
+xkb_symbols "basic" {
+     
+     // Describes the differences between a very simple en_US
+     // keyboard and a Slovak keyboard
+     // This layout conforms to a new sk compromise standard designed 
+     // to satisfy myself :-)
+     // based on layout by Kamil Toman <ktoman@email.cz>
+     // 2001,2002 by Radovan Garabik <garabik@melkor.dnp.fmph.uniba.sk>
+     
+
+    name[Group1] = "US";
+    name[Group2] = "Slovak";
+
+    key.type = "FOUR_LEVEL";
+
+    key <TLDE> {
+                 [     quoteleft,      asciitilde,
+                        semicolon,	dead_abovering   ],
+                 [     quoteleft,      asciitilde,
+                        semicolon,	dead_abovering   ]  };
+    key <AE01>  {
+                    [	1,		exclam,
+        		plus,		dead_tilde ],
+                     [	plus,		exclam,
+	        	1,		dead_tilde ] };
+    key <AE02>  { 
+                    [	2,         at, 
+		    	lcaron,		dead_caron ],
+                    [	lcaron,         at, 
+			2,		dead_caron ] };
+    key <AE03>  { 
+                    [	3,		numbersign,
+			scaron,      	dead_circumflex ],
+                    [	scaron,		numbersign,
+			3,      	dead_circumflex ] };
+    key <AE04>  { 
+                    [	4,		dollar,
+			ccaron,		dead_breve ],
+                    [	ccaron,		dollar,
+			4,		dead_breve ] };
+    key <AE05>  { 
+                    [	5,		percent,
+			tcaron,	        dead_abovering ],
+                    [	tcaron,		percent,
+			5,	        dead_abovering ] };
+    key <AE06>  { 
+                    [	6,		asciicircum,
+			zcaron,      	dead_ogonek ],
+                    [	zcaron,		asciicircum,
+			6,      	dead_ogonek ] };
+    key <AE07>  { 
+                    [	7,		ampersand,
+			yacute,      	dead_grave ],
+                    [	yacute,		ampersand,
+			7,      	dead_grave ] };
+    key <AE08>  { 
+                    [	8,		asterisk,
+			aacute,	        dead_abovedot ],
+                    [	aacute,		asterisk,
+			8,	        dead_abovedot ] };
+    key <AE09>  { 
+                    [	9,		parenleft,
+			iacute,	        dead_acute ],
+                    [	iacute,		parenleft,
+			9,	        dead_acute ] };
+    key <AE10>  { 
+                    [	0,		parenright,
+			eacute,      	dead_doubleacute ],
+                    [	eacute,		parenright,
+			0,      	dead_doubleacute ] };
+    key <AE11>  { 
+                    [	minus,		underscore,
+			equal,		percent ],
+                    [	minus,		underscore,
+			equal,		percent ] };
+    key <AE12>  { 
+                    [	equal,  	plus,
+			dead_acute,	dead_caron ],
+                    [	dead_acute,	dead_caron,
+			equal,		plus ] };
+
+    key <AD01>  { 
+                    [	q,		Q,
+			backslash,	NoSymbol ],
+                    [	q,		Q,
+			backslash,	NoSymbol ] };
+    key <AD02>  { 
+                    [	w,		W,
+			EuroSign,	yen ],
+                [	w,		W,
+			EuroSign,	yen ] };
+    key <AD03>  { 
+                    [	e,		E,
+			eacute,	        Eacute ],
+                [	e,		E,
+			eacute,	        Eacute ] };
+    key <AD04>  { 
+                    [	r,    		R,              
+		        racute,	        Racute ],
+                [	r,    		R,              
+		        racute,	        Racute ] };
+    key <AD05>  { 
+                    [	t,		T,
+		        tcaron,	        Tcaron ],
+                [	t,		T,
+		        tcaron,	        Tcaron ] };
+    key <AD06>  { 
+                    [	y,		Y,
+		        yacute,	        Yacute ],
+                [	y,		Y,
+		        yacute,	        Yacute ] };
+    key <AD07>  { 
+                    [	u,		U,
+		        uacute, 	Uacute ],
+                [	u,		U,
+		        uacute, 	Uacute ] };
+    key <AD08>  { 
+                    [	i,		I,
+		        iacute, 	Iacute ],
+                [	i,		I,
+		        iacute, 	Iacute ] };
+    key <AD09>  { 
+                    [	o,		O,
+		        oacute,	        Oacute ],
+                [	o,		O,
+		        oacute,	        Oacute ] };
+    key <AD10>  { 
+                    [	p,		P,
+		        ocircumflex,	Ocircumflex ],
+                [	p,		P,
+		        ocircumflex,	Ocircumflex ] };
+
+    key <AD11>  {
+                     [	bracketleft,  braceleft,
+                        uacute,		slash  ],
+                 [	bracketleft,  braceleft,
+                        uacute,		slash  ] };
+    key <AD12>  { 
+                    [	bracketright, braceright,
+                        adiaeresis,	parenleft ],
+                [	bracketright, braceright,
+                        adiaeresis,	parenleft ] };
+
+    key <AC01>  { 
+                    [	a,		A,
+			aacute,	        Aacute ],
+                [	a,		A,
+			aacute,	        Aacute ] };
+    key <AC02>  { 
+                    [	s,		S,
+			scaron,	        Scaron ],
+                [	s,		S,
+			scaron,	        Scaron ] };
+    key <AC03>  { 
+                    [	d,		D,
+			dcaron, 	Dcaron ],
+                [	d,		D,
+			dcaron, 	Dcaron ] };
+    key <AC04>  { 
+                    [	f,		F,
+			rcaron,	        Rcaron  ],
+                [	f,		F,
+			rcaron,	        Rcaron  ] };
+    key <AC05>  { 
+                    [	g,		G,
+			bracketright,	NoSymbol ],
+                [	g,		G,
+			bracketright,	NoSymbol ] };
+    key <AC06>  { 
+                    [	h,		H,
+			grave,		NoSymbol ],
+                [	h,		H,
+			grave,		NoSymbol ] };
+    key <AC07>  { 
+                    [	j,		J,
+			udiaeresis,	Udiaeresis ],
+                [	j,		J,
+			udiaeresis,	Udiaeresis ] };
+    key <AC08>  { 
+                    [	k,		K,
+			lacute,	        Lacute ],
+                [	k,		K,
+			lacute,	        Lacute ] };
+    key <AC09>  { 
+                    [	l,		L,
+			lcaron,	        Lcaron ],
+                [	l,		L,
+			lcaron,	        Lcaron ] };
+                  
+    key <AC10>  { 
+                    [	semicolon,      colon,
+                        ocircumflex,	quotedbl ],
+                [	semicolon,      colon,
+                        ocircumflex,	quotedbl ] };
+    key <AC11>  { 
+                    [	quoteright,     quotedbl,
+                        section,	exclam ],
+                [	quoteright,     quotedbl,
+                        section,	exclam ] };
+    key <AC12>  { 
+                    [     EuroSign,       dead_diaeresis,
+                        NoSymbol,       NoSymbol ],
+                [     EuroSign,       dead_diaeresis,
+                        NoSymbol,       NoSymbol ] };
+    key <BKSL>  { 
+                    [	backslash,    bar,
+                        ncaron,		parenright ],
+                [	backslash,    bar,
+                        ncaron,		parenright ] };
+
+    key <LSGT>  { 
+                    [	less,    greater,
+                        backslash,	bar ],
+                [	less,    greater,
+                        backslash,	bar ] };
+    key <AB01>  { 
+                    [	z,		Z,
+			zcaron,		Zcaron ],
+                [	z,		Z,
+			zcaron,		Zcaron ] };
+    key <AB02>  { 
+                    [	x,		X,
+			adiaeresis,	Adiaeresis ],
+                [	x,		X,
+			adiaeresis,	Adiaeresis ] };
+    key <AB03>  { 
+                    [	c,		C,
+			ccaron,	        Ccaron ],
+                [	c,		C,
+			ccaron,	        Ccaron ] };
+    key <AB04>  { 
+                    [	v,		V,
+			uring,		Uring ],
+                [	v,		V,
+			uring,		Uring ] };
+    key <AB05>  { 
+                    [	b,		B,
+			ssharp,	        NoSymbol ],
+                [	b,		B,
+			ssharp,	        NoSymbol ] };
+    key <AB06>  { 
+                    [	n,		N,
+			ncaron,	        Ncaron ],
+                [	n,		N,
+			ncaron,	        Ncaron ] };
+    key <AB07>  { 
+                    [	m,		M,
+			odiaeresis,     Odiaeresis ],
+                [	m,		M,
+			odiaeresis,     Odiaeresis ] };
+    key <AB08>  { 
+                    [	comma,    less,
+                        comma,		question ],
+                [	comma,    less,
+                        comma,		question ] };
+    key <AB09>  { 
+                    [	period,    greater,
+                        period,		colon ],
+                [	period,    greater,
+                        period,		colon ] };
+    key <AB10>  { 
+                    [	slash,    question,
+                        minus,		underscore ],
+                [	slash,    question,
+                        minus,		underscore ] };
+
+    key <SPCE>  { 
+                    [	space,		space,
+			nobreakspace,	nobreakspace ],
+                [	space,		space,
+			nobreakspace,	nobreakspace ] };
+
+    // This certainly shouldn't be 'comma'. Something like KP_DecimalComma
+    // would be better but there's no such definition in keysyms.
+    key <KPDL>  { type="FOUR_LEVEL_KEYPAD", [	KP_Delete,	KP_Decimal,
+    						KP_Delete,	comma] };
+
+    key <RALT> {  type="TWO_LEVEL", [ ISO_Level3_Shift, ISO_Level3_Shift ] };
+    key <LWIN> {  type="TWO_LEVEL", [ Meta_L, Meta_L ] };
+    key <RWIN> {  type="TWO_LEVEL", [ Meta_R, Meta_R ] };
+    key <MENU> {  type="TWO_LEVEL", [ Multi_key, Multi_key ] };
+    modifier_map Mod5   { <RALT> };			
+    modifier_map Mod5   { <MENU> };			
+
+};
+			

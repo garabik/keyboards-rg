@@ -1,0 +1,105 @@
+Recently I've been thinking about keyboard layout, and
+writing my own keymaps (for both console and X, for different
+languages). Here are some of my observations and ideas I 
+collected on the way. This is mostly oriented on ergonomy and
+ease of use, not on technical abilities and obstacles. Please 
+comment (bare in mind that this should be about default and
+de-facto standard configuration - of course everybody could 
+remap keys in whatever way he wants)
+
+- almost all keyboards today have these special keys available:
+  Caps Lock, LShift, RShift, LCtrl, RCtrl, Alt, AltGr (101 keys)
+  most of them has additional: LWin, RWin, Menu (104 keys)
+  there are also some keyboards with more additional keys 
+  (Turbo)
+- we need these special keys for "normal" functionality:
+  1) something to switch between consoles
+  2) Control
+  3) Meta
+  4) Shift
+  5) Compose
+- X window needs to distinguish between Meta and Alt keys
+- all the keys mentioned above should be independent on
+  actual keyboard layout (as an example I'll take cyrillic
+  and latin layout)
+- we need quick and easy and more or less standartized way
+  to type less often used, but needed characters (prime
+  example: Euro sign). The actual layout of these extra characters
+  is dependant on primary layout - e.g. in English layout,
+  <extra key>+e gives EURO, but in Russian cyrillic layout
+  <extra key>+e could give CYRILLIC SMALL LETTER UKRAINIAN IE
+  and <extra key>+i would produce CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+  (that was just an example - but a valid one.  I personally would benefit
+   from such a layout).
+  This <extra key> is conveniently served by AltGr.
+- we need quick and easy and more or less standartized way to switch
+  keyboard layouts. This is especially important when you want to switch
+  back to English USA layout (let's have this as a default) from some
+  other. Typing "setxkbmap" can be very difficult on cyrillic keyboard :-)
+  Console uses (by convention) Pause to do this.
+  X often uses (again, by convention) LShift+Rshift. 
+  Pause is quite away from the reach, LShift+Rshift is rather nice and
+  ergonomic, but I am not sure if linux console driver can do this.
+  (It should be fixed if not).
+  There is also known Alt+Shift combination, used by certain proprietary
+  OS'es
+  
+Now what options we have:
+for 104-key keyboards:
+- Shift is Shift. Both right and left have the same usage.
+- Use LWin as Meta_L, RWin as Meta_R. So any of these keys functions
+as Meta. Use these keys to switch consoles (LWin+Fn 1-12, RWin+Fn 13-24,
+if someone sets up his system to use more than default 6).
+These keys automatically offer themselves to be used for console
+switching.
+- Radical idea: map them to do this also from X (so no Ctrl+Lwin+Fn, just
+LWin+Fn is sufficient).
+- On console, Alt (not AltGr!) is free and can be mapped to Meta to keep backward
+compatibility. So our Alt+Fn still works. Map AltGr+Fn to switch
+consoles 13-24 (as current situation), but do not map AltGr it to Meta.
+- Keep Ctrl+Alt+Fn and Ctrl+AltGr+Fn, as well as Ctrl+(L|R)Win+Fn for
+switching consoles, both in console and in X.
+- In X, the situation is somewhat more complicated - we need separate 
+Alt, so we leave (L|R)Win as Meta, keep Alt as Alt_L. 
+- For compose key, I got the impression from reading keymaps that RWin is 
+often used. I propose to use Menu key. The problem is that currently
+many window managers are using this key to invoke popup menu. 
+However, putty uses this as compose key, so there is a widespread
+precedence for that already.
+Turbo key would serve nicely as compose, but unfortunately such
+keyboards are not widespread.
+We could put compose on some unused key, such as PrintScreen or Pause - 
+but it is unusual and out of reach.
+- For switching keyboard layouts, use LShift+Rshift. Alternatively,
+or simultaneously, use Pause for the purpose (especially if linux
+console cannot do LShift+Rshift).
+- use AltGr as our <extra key> to type special characters such as EURO.
+- ScrollLock is rather nice way of doing Ctrl+S. Fix xterm to
+  use it.
+
+for 101-key keyboards:
+- on console, Alt is Meta
+- On X, ugh... I know this is difficult. 
+- AltGr is still our <extra key>. 
+- we have problems with compose. We could use RCtrl, but that would
+  probably interfere with its usage as Control. Nice way would be 
+  to use AltGr+RCtrl for compose, but I am afraid neither X nor
+  console allows it. Or distinguish between solitary RCtrl press and
+  Ctrl+something.
+  We can still put compose on PrintScreen or somewhere.
+  There is also very rarely used CapsLock, but remapping this key
+  (at least in default configuration) is probably too radical idea 
+  to succeed.
+
+for keyboards that have only one of Shift, Alt, Ctrl:
+Tough. You cannot have everything. But the basic functionality
+is there.
+
+For other than PC keyboards: Users please step out! I have almost
+no experience with them, and I would welcome comments about the
+layouts and usage.
+
+Another nice idea, impossible to implement using current xkb mechanism are
+greedy sequences of keys. See yudit's keymaps about how it looks like.
+
+
