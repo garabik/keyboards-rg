@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Radovan Garabík <garabik@kassiopeia.juls.savba.sk>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.7.2
+Standards-Version: 3.9.6
 
 Package: keyboards-rg
 Architecture: all
