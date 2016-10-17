@@ -2,13 +2,13 @@ Source: keyboards-rg
 Section: misc
 Priority: optional
 Maintainer: Radovan Garabík <garabik@kassiopeia.juls.savba.sk>
-Build-Depends: debhelper (>> 4)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.7.2
 
 Package: keyboards-rg
 Architecture: all
 Suggests: xbase-clients
-Depends: xserver-xorg, xkb-data (>=0.8-8)
+Depends: ${misc:Depends}, xserver-xorg, xkb-data (>=0.8-8)
 Description: Various keyboard layouts for X-window and linux console
  keyboards-rg includes several keyboard layouts. Currently there is
  a Slovak programmers keyboard, Pan-cyrillic yawerty keyboard with
